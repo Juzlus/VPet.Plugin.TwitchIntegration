@@ -1,0 +1,64 @@
+InputDialog#输入对话框:|
+CUSTOM TEXT#自定义文本:|
+Queue#队列:|
+Linked to a Twitch account#链接到 Twitch 帐户:|
+TwitchIntegration#TwitchIntegration:|
+Connecting to the channel...#正在连接至频道...:|
+Failed to connect to channel#无法连接到频道:|
+Unable to connect to the channel#无法连接到频道:|
+Connected to the channel#已连接至频道:|
+Disconnected from the channel#与频道断开连接:|
+An error occurred while joining the channel#加入频道时发生错误:|
+VPet Twitch Integration: Connection successfully completed#VPet Twitch 集成：连接成功完成:|
+(You can now close this page)#（您现在可以关闭此页面）:|
+VPet Twitch Integration: Connection unsuccessful. Please try again.#VPet Twitch 集成：连接失败。 请再试一次。:|
+TwitchIntegration - Settings#TwitchIntegration - 设置:|
+Connection#联系:|
+Channel name#频道名称:|
+Connect with Twitch#与 Twitch 联系:|
+Disconnect from Twitch#与 Twitch 断开连接:|
+Disconnected from the server#与服务器断开连接:|
+Twitch channel name#Twitch 频道名称:|
+Start listening#开始聆听:|
+Stop listening#停止聆听:|
+Chat#聊天:|
+Show usernames#显示用户名:|
+Message prefix#消息前缀:|
+Blacklist#黑名单:|
+Blocked users#队列中的最大数量:|
+Max queue#最大队列数:|
+Full queue#队列已满:|
+What to do when the queue of triggers gets full?#当触发器队列满了怎么办？:|
+Type#类型:|
+CanUse?#可以使用？:|
+Cooldown#冷却:|
+Viewers#观众:|
+Subscribers#订阅者:|
+Moderators / VIPs#版主/VIP:|
+What word must the message begin with (e.g. !vpet)#消息必须以什么词开头（例如！vpet）:|
+Do nothing#没做什么:|
+Remove first element#删除第一个元素:|
+Remove last element#删除最后一个元素:|
+Maximum number of triggers in the queue#队列中触发器的最大数量:|
+Maximum number of messages in the queue#队列中的最大消息数:|
+How often to send messages (in seconds)#发送消息的频率（以秒为单位）:|
+Notifications#通知:|
+Follow#新追随者:|
+New subscription#新订阅:|
+Resub#重新订阅:|
+Raid#袭击:|
+Message content#留言内容:|
+Layout#布局:|
+First label#第一排:|
+Second label#第二排:|
+None#没有任何:|
+Viewiers count#观看人数:|
+Followers count#关注者数量:|
+Subscribers count#订户数:|
+Last follower username#最后关注者用户名:|
+Last sub username#最后订阅者用户名:|
+Custom text#自定义文本:|
+Show/Hide layout#显示/隐藏布局:|
+Triggers queue#触发队列:|
+Queue 0/0#队列0/0:|
+Open file#打开文件:|

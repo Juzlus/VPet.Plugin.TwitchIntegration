@@ -1,0 +1,64 @@
+InputDialog#AAA:|
+CUSTOM TEXT#AAA:|
+Queue#AAA:|
+Linked to a Twitch account#AAA:|
+TwitchIntegration#AAA:|
+Connecting to the channel...#AAA:|
+Failed to connect to channel#AAA:|
+Unable to connect to the channel#AAA:|
+Connected to the channel#AAA:|
+Disconnected from the channel#AAA:|
+An error occurred while joining the channel#AAA:|
+VPet Twitch Integration: Connection successfully completed#AAA:|
+(You can now close this page)#AAA:|
+VPet Twitch Integration: Connection unsuccessful. Please try again.#AAA:|
+TwitchIntegration - Settings#AAA:|
+Connection#AAA:|
+Channel name#AAA:|
+Connect with Twitch#AAA:|
+Disconnect from Twitch#AAA:|
+Disconnected from the server#AAA:|
+Twitch channel name#AAA:|
+Start listening#AAA:|
+Stop listening#AAA:|
+Chat#AAA:|
+Show usernames#AAA:|
+Message prefix#AAA:|
+Blacklist#AAA:|
+Blocked users#AAA:|
+Max queue#AAA:|
+Full queue#AAA:|
+What to do when the queue of triggers gets full?#AAA:|
+Type#AAA:|
+CanUse?#AAA:|
+Cooldown#AAA:|
+Viewers#AAA:|
+Subscribers#AAA:|
+Moderators / VIPs#AAA:|
+What word must the message begin with (e.g. !vpet)#AAA:|
+Do nothing#AAA:|
+Remove first element#AAA:|
+Remove last element#AAA:|
+Maximum number of triggers in the queue#AAA:|
+Maximum number of messages in the queue#AAA:|
+How often to send messages (in seconds)#AAA:|
+Notifications#AAA:|
+Follow#AAA:|
+New subscription#AAA:|
+Resub#AAA:|
+Raid#AAA:|
+Message content#AAA:|
+Layout#AAA:|
+First label#AAA:|
+Second label#AAA:|
+None#AAA:|
+Viewiers count#AAA:|
+Followers count#AAA:|
+Subscribers count#AAA:|
+Last follower username#AAA:|
+Last sub username#AAA:|
+Custom text#AAA:|
+Show/Hide layout#AAA:|
+Triggers queue#AAA:|
+Queue 0/0#AAA:|
+Open file#AAA:|

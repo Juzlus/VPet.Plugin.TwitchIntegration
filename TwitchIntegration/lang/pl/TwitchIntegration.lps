@@ -1,0 +1,64 @@
+InputDialog#Okno dialogowe:|
+CUSTOM TEXT#TEKST WŁASNY:|
+Queue#Kolejka:|
+Linked to a Twitch account#Połączony z kontem Twitch:|
+TwitchIntegration#TwitchIntegration:|
+Connecting to the channel...#Łączenie z kanałem...:|
+Failed to connect to channel#Nie udało się połączyć z kanałem:|
+Unable to connect to the channel#Nie można połączyć się z kanałem:|
+Connected to the channel#Połączony z kanałem:|
+Disconnected from the channel#Rozłączony z kanałem:|
+An error occurred while joining the channel#Wystąpił błąd podczas dołączania do kanału:|
+VPet Twitch Integration: Connection successfully completed#VPet Twitch Integration: Połączenie zostało pomyślnie zakończone:|
+(You can now close this page)#(Możesz teraz zamknąć tę stronę):|
+VPet Twitch Integration: Connection unsuccessful. Please try again.#VPet Twitch Integration: Połączenie nie powiodło się. Spróbuj ponownie.:|
+TwitchIntegration - Settings#TwitchIntegration - Ustawienia:|
+Connection#Połączenie:|
+Channel name#Nazwa kanału:|
+Connect with Twitch#Połącz się z Twitch:|
+Disconnect from Twitch#Rozłącz się od Twitch:|
+Disconnected from the server#Rozłączono z serwerem:|
+Twitch channel name#Nazwa kanału Twitch:|
+Start listening#Zacznij nasłuchiwać:|
+Stop listening#Przestań nasłuchiwać:|
+Chat#Czat:|
+Show usernames#Wyświetl nazwy:|
+Message prefix#Prefix:|
+Blacklist#Czarna lista:|
+Blocked users#Zablokowani:|
+Max queue#Maks. kolejka:|
+Full queue#Pełna kolejka:|
+What to do when the queue of triggers gets full?#Co zrobić, gdy kolejka jest pełna?:|
+Type#Rodzaj:|
+CanUse?#Może?:|
+Cooldown#Cooldown:|
+Viewers#Widzowie:|
+Subscribers#Subskrybenci:|
+Moderators / VIPs#Moderatorzy / VIPy:|
+What word must the message begin with (e.g. !vpet)#Od jakiego słowa musi zaczynać się wiadomość (np. !vpet)?:|
+Do nothing#Nie rób nic:|
+Remove first element#Usuń pierwszy element:|
+Remove last element#Usuń ostatni element:|
+Maximum number of triggers in the queue#Maksymalna liczba wyzwalaczy w kolejce:|
+Maximum number of messages in the queue#Maksymalna liczba wiadomości w kolejce:|
+How often to send messages (in seconds)#Jak często wysyłać wiadomości (w sekundach):|
+Notifications#Powiadomienia:|
+Follow#Obserwacja:|
+New subscription#Nowa subskrypcja:|
+Resub#Ponowna subskrypcja:|
+Raid#Raid:|
+Message content#Treść wiadomości:|
+Layout#Układ:|
+First label#Pierwszy wiersz:|
+Second label#Drugi wiersz:|
+None#Nic:|
+Viewiers count#Liczba oglądających:|
+Followers count#Liczba obserwujących:|
+Subscribers count#Liczba subskrybentów:|
+Last follower username#Nazwa ostatniego obserwującego:|
+Last sub username#Nazwa ostatniego subskrybującego:|
+Custom text#Tekst własny:|
+Show/Hide layout#Pokaż/Ukryj:|
+Triggers queue#Kolejka wyzwalaczy:|
+Queue 0/0#Kolejka 0/0:|
+Open file#Otwórz plik:|

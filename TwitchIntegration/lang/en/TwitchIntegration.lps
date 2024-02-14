@@ -1,0 +1,64 @@
+InputDialog#InputDialog:|
+CUSTOM TEXT#CUSTOM TEXT:|
+Queue#Queue:|
+Linked to a Twitch account#Linked to a Twitch account:|
+TwitchIntegration#TwitchIntegration:|
+Connecting to the channel...#Connecting to the channel...:|
+Failed to connect to channel#Failed to connect to channel:|
+Unable to connect to the channel#Unable to connect to the channel:|
+Connected to the channel#Connected to the channel:|
+Disconnected from the channel#Disconnected from the channel:|
+An error occurred while joining the channel#An error occurred while joining the channel:|
+VPet Twitch Integration: Connection successfully completed#VPet Twitch Integration: Connection successfully completed:|
+(You can now close this page)#(You can now close this page):|
+VPet Twitch Integration: Connection unsuccessful. Please try again.#VPet Twitch Integration: Connection unsuccessful. Please try again.:|
+TwitchIntegration - Settings#TwitchIntegration - Settings:|
+Connection#Connection:|
+Channel name#Channel name:|
+Connect with Twitch#Connect with Twitch:|
+Disconnect from Twitch#Disconnect from Twitch:|
+Disconnected from the server#Disconnected from the server:|
+Twitch channel name#Twitch channel name:|
+Start listening#Start listening:|
+Stop listening#Stop listening:|
+Chat#Chat:|
+Show usernames#Show usernames:|
+Message prefix#Message prefix:|
+Blacklist#Blacklist:|
+Blocked users#Blocked users:|
+Max queue#Max queue:|
+Full queue#Full queue:|
+What to do when the queue of triggers gets full?#What to do when the queue of triggers gets full?:|
+Type#Type:|
+CanUse?#CanUse:|
+Cooldown#Cooldown:|
+Viewers#Viewers:|
+Subscribers#Subscribers:|
+Moderators / VIPs#Moderators / VIPs:|
+What word must the message begin with (e.g. !vpet)#What word must the message begin with (e.g. !vpet):|
+Do nothing#Do nothing:|
+Remove first element#Remove first element:|
+Remove last element#Remove last element:|
+Maximum number of triggers in the queue#Maximum number of triggers in the queue:|
+Maximum number of messages in the queue#Maximum number of messages in the queue:|
+How often to send messages (in seconds)#How often to send messages (in seconds):|
+Notifications#Notifications:|
+Follow#Follow:|
+New subscription#New subscription:|
+Resub#Resub:|
+Raid#Raid:|
+Message content#Message content:|
+Layout#Layout:|
+First label#First label:|
+Second label#Second label:|
+None#None:|
+Viewiers count#Viewiers count:|
+Followers count#Followers count:|
+Subscribers count#Subscribers count:|
+Last follower username#Last follower username:|
+Last sub username#Last sub username:|
+Custom text#Custom text:|
+Show/Hide layout#Show/Hide layout:|
+Triggers queue#Triggers queue:|
+Queue 0/0#Queue 0/0:|
+Open file#Open file:|
