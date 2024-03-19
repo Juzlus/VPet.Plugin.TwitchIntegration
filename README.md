@@ -1,5 +1,5 @@
 # 🤔 About
-<img src="https://steamuserimages-a.akamaihd.net/ugc/2079031399340727676/5CF9058CA47DD8CE5AD730F64C975E0F302C7F17/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" align="right" width="100px"/>
+<img src="https://steamuserimages-a.akamaihd.net/ugc/2451719786262843535/6DFAA0EF61382ACD9669FA4B3AE06A16D9B94BA7/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" align="right" width="100px"/>
 
 This is a modification to [VPET Simulator](https://store.steampowered.com/app/1920960/VPet/) that allows your pet to read Twitch chat messages.
 
