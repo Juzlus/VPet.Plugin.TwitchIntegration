@@ -14,6 +14,9 @@ This is a modification to [VPET Simulator](https://store.steampowered.com/app/19
 
 ## 📋 Changelog
    
+### v1.0.3
+- Added username reading 
+- Fixed display of usernames in trigger queue
 ### v1.0.2
 - New refreshed version
 ### v1.0.1
