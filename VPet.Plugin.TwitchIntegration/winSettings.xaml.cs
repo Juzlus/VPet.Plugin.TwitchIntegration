@@ -148,6 +148,7 @@ namespace VPet.Plugin.TwitchIntegration
         {
             this.ChannelName.Text = this.main.GetFromConfig("ChannelName");
             this.ShowUsername.IsChecked = bool.Parse(this.main.GetFromConfig("ShowUsername", "true"));
+            this.ReadUsername.IsChecked = bool.Parse(this.main.GetFromConfig("ReadUsername", "false"));
             this.Prefix.Text = this.main.GetFromConfig("Prefix", "null");
             this.MaxQueue.Value = int.Parse(this.main.GetFromConfig("MaxQueue", "15"));
             this.FullQueueIndex.SelectedIndex = int.Parse(this.main.GetFromConfig("FullQueueIndex", "50"));
@@ -171,6 +172,7 @@ namespace VPet.Plugin.TwitchIntegration
             this.Layout_1_0.SelectedIndex = int.Parse(this.main.GetFromConfig("Layout_1_0", "0"));
             this.Layout_1_1.SelectedIndex = int.Parse(this.main.GetFromConfig("Layout_1_1", "0"));
             this.Layout_1_2.SelectedIndex = int.Parse(this.main.GetFromConfig("Layout_1_2", "0"));
+            this.ReadUsername.IsEnabled = (bool)this.ShowUsername.IsChecked;
             this.isConfigLoaded = true;
         }
 
@@ -179,6 +181,12 @@ namespace VPet.Plugin.TwitchIntegration
             if (!this.isConfigLoaded) return;
             Switch toogle = (Switch)sender;
             this.main.SaveToConfig(toogle.Name, toogle.IsChecked.ToString());
+
+            if (toogle.Name == this.ShowUsername.Name)
+            {
+                this.main.SaveToConfig(this.ReadUsername.Name, toogle.IsChecked == false ? "false" : this.ReadUsername.IsChecked.ToString());
+                this.ReadUsername.IsEnabled = (bool)toogle.IsChecked;
+            }
         }
 
         private void ChangeTextBox(object sender, TextChangedEventArgs e)

@@ -112,21 +112,23 @@
                         <RowDefinition Height="40" />
                         <RowDefinition Height="40" />
                         <RowDefinition Height="40" />
+                        <RowDefinition Height="40" />
                     </Grid.RowDefinitions>
                     <TextBlock Grid.Row="0" Text="{ll:Str 'Show usernames'}" Style="{DynamicResource ThemeTextBlock}" />
-                    <TextBlock Grid.Row="1" Text="{ll:Str 'Message prefix'}" Style="{DynamicResource ThemeTextBlock}" />
-                    <TextBlock Grid.Row="2" Text="{ll:Str 'Blacklist'}" Style="{DynamicResource ThemeTextBlock}" />
-                    <TextBlock Grid.Row="3" Text="{ll:Str 'Blocked users'}" Style="{DynamicResource ThemeTextBlock}" />
-                    <TextBlock Grid.Row="4" Text="{ll:Str 'Max queue'}" Style="{DynamicResource ThemeTextBlock}" />
-                    <TextBlock Grid.Row="5" Text="{ll:Str 'Full queue'}" ToolTip="{ll:Str 'What to do when the queue of triggers gets full?'}" Style="{DynamicResource ThemeTextBlock}" />
+                    <TextBlock Grid.Row="1" Text="{ll:Str 'Read usernames'}" Style="{DynamicResource ThemeTextBlock}" />
+                    <TextBlock Grid.Row="2" Text="{ll:Str 'Message prefix'}" Style="{DynamicResource ThemeTextBlock}" />
+                    <TextBlock Grid.Row="3" Text="{ll:Str 'Blacklist'}" Style="{DynamicResource ThemeTextBlock}" />
+                    <TextBlock Grid.Row="4" Text="{ll:Str 'Blocked users'}" Style="{DynamicResource ThemeTextBlock}" />
+                    <TextBlock Grid.Row="5" Text="{ll:Str 'Max queue'}" Style="{DynamicResource ThemeTextBlock}" />
+                    <TextBlock Grid.Row="6" Text="{ll:Str 'Full queue'}" ToolTip="{ll:Str 'What to do when the queue of triggers gets full?'}" Style="{DynamicResource ThemeTextBlock}" />
 
-                    <TextBlock Grid.Row="6" Grid.Column="0" Text="{ll:Str 'Type'}" FontWeight="Bold" TextAlignment="Center" Style="{DynamicResource ThemeTextBlock}" Margin="0,0,75,0" />
-                    <TextBlock Grid.Row="6" Grid.Column="1" Text="{ll:Str 'CanUse?'}" FontWeight="Bold" Style="{DynamicResource ThemeTextBlock}" Grid.ColumnSpan="3" Margin="17,0,192,0" />
-                    <TextBlock Grid.Row="6" Grid.Column="3" Text="{ll:Str 'Cooldown'}" FontWeight="Bold" TextAlignment="Center" Style="{DynamicResource ThemeTextBlock}" />
+                    <TextBlock Grid.Row="7" Grid.Column="0" Text="{ll:Str 'Type'}" FontWeight="Bold" TextAlignment="Center" Style="{DynamicResource ThemeTextBlock}" Margin="0,0,75,0" />
+                    <TextBlock Grid.Row="7" Grid.Column="1" Text="{ll:Str 'CanUse?'}" FontWeight="Bold" Style="{DynamicResource ThemeTextBlock}" Grid.ColumnSpan="3" Margin="17,0,192,0" />
+                    <TextBlock Grid.Row="7" Grid.Column="3" Text="{ll:Str 'Cooldown'}" FontWeight="Bold" TextAlignment="Center" Style="{DynamicResource ThemeTextBlock}" />
 
-                    <TextBlock Grid.Row="7" Text="{ll:Str 'Viewers'}" Style="{DynamicResource ThemeTextBlock}" />
-                    <TextBlock Grid.Row="8" Text="{ll:Str 'Subscribers'}" Style="{DynamicResource ThemeTextBlock}" />
-                    <TextBlock Grid.Row="9" Text="{ll:Str 'Moderators / VIPs'}" Style="{DynamicResource ThemeTextBlock}" />
+                    <TextBlock Grid.Row="8" Text="{ll:Str 'Viewers'}" Style="{DynamicResource ThemeTextBlock}" />
+                    <TextBlock Grid.Row="9" Text="{ll:Str 'Subscribers'}" Style="{DynamicResource ThemeTextBlock}" />
+                    <TextBlock Grid.Row="10" Text="{ll:Str 'Moderators / VIPs'}" Style="{DynamicResource ThemeTextBlock}" />
 
                     <pu:Switch Click="ChangeSwitch" x:Name="ShowUsername" Background="Transparent"
                         BorderBrush="{DynamicResource PrimaryDark}" BoxHeight="18" BoxWidth="35" Grid.Row="0" Grid.Column="2"
@@ -135,44 +137,51 @@
                         ToggleBrush="{DynamicResource PrimaryDark}" ToggleShadowColor="{x:Null}"
                         ToggleSize="14" />
 
-                    <TextBox TextChanged="ChangeTextBox" x:Name="Prefix" Style="{DynamicResource StandardTextBoxStyle}" Width="250" FontSize="15" Padding="0, 1.5, 0, 0"
-					    HorizontalAlignment="Center" MaxLength="50" AcceptsReturn="True" TextWrapping="WrapWithOverflow" TextAlignment="Left"
-                        BorderThickness="2" Grid.Row="1" Margin="0,5,0,5" Grid.Column="2" Grid.ColumnSpan="2"
-                        ToolTip="{ll:Str 'What word must the message begin with (e.g. !vpet)'}" />
-
-                    <pu:Switch Click="ChangeSwitch" x:Name="ViewersCanUse" Background="Transparent"
-                        BorderBrush="{DynamicResource PrimaryDark}" BoxHeight="18" BoxWidth="35" Grid.Row="7" Grid.Column="2"
+                    <pu:Switch Click="ChangeSwitch" x:Name="ReadUsername" Background="Transparent"
+                        BorderBrush="{DynamicResource PrimaryDark}" BoxHeight="18" BoxWidth="35" Grid.Row="1" Grid.Column="2"
                         CheckedBackground="{DynamicResource Primary}" CheckedBorderBrush="{DynamicResource Primary}"
                         CheckedToggleBrush="{DynamicResource DARKPrimaryText}"
                         ToggleBrush="{DynamicResource PrimaryDark}" ToggleShadowColor="{x:Null}"
                         ToggleSize="14" />
 
-                    <pu:Switch Click="ChangeSwitch" x:Name="SubscribersCanUse" Background="Transparent"
+                    <TextBox TextChanged="ChangeTextBox" x:Name="Prefix" Style="{DynamicResource StandardTextBoxStyle}" Width="250" FontSize="15" Padding="0, 1.5, 0, 0"
+					    HorizontalAlignment="Center" MaxLength="50" AcceptsReturn="True" TextWrapping="WrapWithOverflow" TextAlignment="Left"
+                        BorderThickness="2" Grid.Row="2" Margin="0,5,0,5" Grid.Column="2" Grid.ColumnSpan="2"
+                        ToolTip="{ll:Str 'What word must the message begin with (e.g. !vpet)'}" />
+
+                    <pu:Switch Click="ChangeSwitch" x:Name="ViewersCanUse" Background="Transparent"
                         BorderBrush="{DynamicResource PrimaryDark}" BoxHeight="18" BoxWidth="35" Grid.Row="8" Grid.Column="2"
                         CheckedBackground="{DynamicResource Primary}" CheckedBorderBrush="{DynamicResource Primary}"
                         CheckedToggleBrush="{DynamicResource DARKPrimaryText}"
                         ToggleBrush="{DynamicResource PrimaryDark}" ToggleShadowColor="{x:Null}"
                         ToggleSize="14" />
 
-                    <pu:Switch Click="ChangeSwitch" x:Name="ModeratorsCanUse" Background="Transparent"
+                    <pu:Switch Click="ChangeSwitch" x:Name="SubscribersCanUse" Background="Transparent"
                         BorderBrush="{DynamicResource PrimaryDark}" BoxHeight="18" BoxWidth="35" Grid.Row="9" Grid.Column="2"
                         CheckedBackground="{DynamicResource Primary}" CheckedBorderBrush="{DynamicResource Primary}"
                         CheckedToggleBrush="{DynamicResource DARKPrimaryText}"
                         ToggleBrush="{DynamicResource PrimaryDark}" ToggleShadowColor="{x:Null}"
                         ToggleSize="14" />
 
-                    <ComboBox SelectionChanged="ChangeComboBox" x:Name="FullQueueIndex" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Style="{DynamicResource StandardComboBoxStyle}"
+                    <pu:Switch Click="ChangeSwitch" x:Name="ModeratorsCanUse" Background="Transparent"
+                        BorderBrush="{DynamicResource PrimaryDark}" BoxHeight="18" BoxWidth="35" Grid.Row="10" Grid.Column="2"
+                        CheckedBackground="{DynamicResource Primary}" CheckedBorderBrush="{DynamicResource Primary}"
+                        CheckedToggleBrush="{DynamicResource DARKPrimaryText}"
+                        ToggleBrush="{DynamicResource PrimaryDark}" ToggleShadowColor="{x:Null}"
+                        ToggleSize="14" />
+
+                    <ComboBox SelectionChanged="ChangeComboBox" x:Name="FullQueueIndex" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Style="{DynamicResource StandardComboBoxStyle}"
                             FontSize="16" Margin="5,5,5,5" HorizontalAlignment="Center" Width="240" ToolTip="{ll:Str 'What to do when the queue of triggers gets full?'}">
                         <ComboBoxItem IsEnabled="True" IsSelected="True" Content="{ll:Str 'Do nothing'}"></ComboBoxItem>
                         <ComboBoxItem IsEnabled="True" Content="{ll:Str 'Remove first element'}"></ComboBoxItem>
                         <ComboBoxItem IsEnabled="True" Content="{ll:Str 'Remove last element'}"></ComboBoxItem>
                     </ComboBox>
 
-                    <Button x:Name="Blacklist" Click="OpenFile" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Content="{ll:Str 'Open file'}" Background="{DynamicResource SecondaryLight}" BorderBrush="{DynamicResource SecondaryDark}" FontSize="16" Margin="5,5,5,5" />
+                    <Button x:Name="Blacklist" Click="OpenFile" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Content="{ll:Str 'Open file'}" Background="{DynamicResource SecondaryLight}" BorderBrush="{DynamicResource SecondaryDark}" FontSize="16" Margin="5,5,5,5" />
 
-                    <Button x:Name="BlockedUsers" Click="OpenFile" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Content="{ll:Str 'Open file'}" Background="{DynamicResource SecondaryLight}" BorderBrush="{DynamicResource SecondaryDark}" FontSize="16" Margin="5,5,5,5" />
+                    <Button x:Name="BlockedUsers" Click="OpenFile" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Content="{ll:Str 'Open file'}" Background="{DynamicResource SecondaryLight}" BorderBrush="{DynamicResource SecondaryDark}" FontSize="16" Margin="5,5,5,5" />
 
-                    <Grid Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2">
+                    <Grid Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="80*" />
                             <ColumnDefinition Width="20*" />
@@ -192,7 +201,7 @@
                             ToolTip="{ll:Str 'Maximum number of messages in the queue'}" />
                     </Grid>
 
-                    <Grid Grid.Row="7" Grid.Column="3">
+                    <Grid Grid.Row="8" Grid.Column="3">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="70*" />
                             <ColumnDefinition Width="30*" />
@@ -212,7 +221,7 @@
                              ToolTip="{ll:Str 'How often to send messages (in seconds)'}" />
                     </Grid>
 
-                    <Grid Grid.Row="8" Grid.Column="3">
+                    <Grid Grid.Row="9" Grid.Column="3">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="70*" />
                             <ColumnDefinition Width="30*" />
@@ -232,7 +241,7 @@
                              ToolTip="{ll:Str 'How often to send messages (in seconds)'}" />
                     </Grid>
 
-                    <Grid Grid.Row="9" Grid.Column="3">
+                    <Grid Grid.Row="10" Grid.Column="3">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="70*" />
                             <ColumnDefinition Width="30*" />

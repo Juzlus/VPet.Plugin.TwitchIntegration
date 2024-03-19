@@ -89,7 +89,9 @@ namespace VPet.Plugin.TwitchIntegration
                 xmlDoc.DocumentElement?.AppendChild(node);
             }
             node.InnerText = value;
-            xmlDoc.Save(this.configPath);
+            try {
+                xmlDoc.Save(this.configPath);
+            } catch { }
         }
 
         public string GetFromConfig(string key, string alt = null)
@@ -120,17 +122,20 @@ namespace VPet.Plugin.TwitchIntegration
 
         public async void SendMsg(string msgAuthor, string msgContent)
         {
-
+            bool showUsername = bool.Parse(this.GetFromConfig("ShowUsername", "true"));
+            bool readUsername = bool.Parse(this.GetFromConfig("ReadUsername", "false"));
+            if (!showUsername)
+                msgAuthor = this.petName;
+            
             Action sendMsg = async () =>
             {
                 this.MW.Core.Save.Name = msgAuthor;
-                this.MW.Main.Say(msgContent);
+                this.MW.Main.Say(readUsername ? $"{msgAuthor}: {msgContent}" : msgContent);
             };
-
 
             if (Application.Current != null)
                 Application.Current.Dispatcher.Invoke(sendMsg);
-            
+
             await Task.Delay(1000);
             this.MW.Core.Save.Name = this.petName;
         }

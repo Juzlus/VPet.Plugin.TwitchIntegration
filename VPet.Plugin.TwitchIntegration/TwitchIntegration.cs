@@ -208,10 +208,6 @@ namespace VPet.Plugin.TwitchIntegration
                 message = message.Substring(prefix.Length + 1);
             }
 
-            bool showUsername = bool.Parse(this.main.GetFromConfig("ShowUsername", "true"));
-            if (!showUsername)
-                username = this.main.petName;
-
             if (this.usernames.Contains(username))
                 return;
 
