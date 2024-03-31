@@ -1,4 +1,4 @@
-<pu:WindowX x:Class="VPet.Plugin.TwitchIntegration.winSettings"
+<Window x:Class="VPet.Plugin.TwitchIntegration.winSettings"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -458,4 +458,4 @@
             </ScrollViewer>
         </TabItem>
     </TabControl>
-</pu:WindowX>
+</Window>

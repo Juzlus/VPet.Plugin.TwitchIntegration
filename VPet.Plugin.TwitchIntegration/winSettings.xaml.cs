@@ -8,7 +8,7 @@ using System.Windows.Controls.Primitives;
 
 namespace VPet.Plugin.TwitchIntegration
 {
-    public partial class winSettings : WindowX
+    public partial class winSettings : Window
     {
         private Main main;
         private bool isConfigLoaded = false;

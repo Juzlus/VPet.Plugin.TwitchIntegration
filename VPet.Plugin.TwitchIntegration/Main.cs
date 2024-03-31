@@ -21,7 +21,7 @@ namespace VPet.Plugin.TwitchIntegration
         public winSettings settingsPanel;
         public Layout layoutPanel;
 
-        public override string PluginName => nameof(Plugin.TwitchIntegration);
+        public override string PluginName => nameof(TwitchIntegration);
 
         public Main(IMainWindow mainwin) : base(mainwin)
         {
@@ -30,7 +30,7 @@ namespace VPet.Plugin.TwitchIntegration
         public override void LoadPlugin()
         {
             this.Setup();
-            this.CreateMenuItem(nameof(Plugin.TwitchIntegration));
+            this.CreateMenuItem(nameof(TwitchIntegration));
         }
 
         private void Setup()
@@ -39,8 +39,8 @@ namespace VPet.Plugin.TwitchIntegration
             this.petName = this.MW.Core.Save.Name;
             this.configPath = $"{this.path}//config//config.cfg";
 
-            this.layoutPanel = new Layout(this);
             this.twitch = new TwitchIntegration();
+            this.layoutPanel = new Layout(this);
         }
 
         private void CreateMenuItem(string buttonName)
@@ -115,9 +115,9 @@ namespace VPet.Plugin.TwitchIntegration
                 File.Open(filePath, FileMode.Create);
                 await Task.Delay(1000);
                 if (File.Exists(filePath))
-                    Process.Start(filePath);
+                    Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
             } else
-                Process.Start(filePath);
+                Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
         }
 
         public async void SendMsg(string msgAuthor, string msgContent)

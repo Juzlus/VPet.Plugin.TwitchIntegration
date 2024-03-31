@@ -113,8 +113,8 @@ namespace VPet.Plugin.TwitchIntegration
             string twitchOauth = main.GetFromConfig("TwitchOauth", null);
             if (twitchClient is null || channelName is null)
             {
-            main.settingsPanel.ChangeStatus($"{"Failed to connect to channel".Translate()}: {this.channelName}!", Brushes.OrangeRed);
-            return;
+                main.settingsPanel.ChangeStatus($"{"Failed to connect to channel".Translate()}: {this.channelName}!", Brushes.OrangeRed);
+                return;
             }
 
             this.credentials = new ConnectionCredentials("VPet_Streaming_Integration", twitchOauth);
