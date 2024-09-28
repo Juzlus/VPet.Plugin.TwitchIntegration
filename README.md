@@ -1,9 +1,26 @@
 # 🤔 About
-<img src="https://steamuserimages-a.akamaihd.net/ugc/2451719786262843535/6DFAA0EF61382ACD9669FA4B3AE06A16D9B94BA7/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" align="right" width="100px"/>
+<img src="https://steamuserimages-a.akamaihd.net/ugc/2538423040726333989/01C9B2777023FC39AFAC0C17B1B94354557003F5/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" align="right" width="100px"/>
 
 This is a modification to [VPET Simulator](https://store.steampowered.com/app/1920960/VPet/) that allows your pet to read Twitch chat messages.
 
  [Page on Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3043847008).
+
+## ✨ Usage (NuGet package)
+
+- [LinePutScript](https://github.com/LorisYounger/LinePutScript?tab=readme-ov-file)
+- [LinePutScript.Localization.WPF](https://github.com/LorisYounger/LinePutScript.Localization.WPF)
+- [Microsoft.CSharp](https://github.com/dotnet/corefx)
+- [Microsoft.Extensions.DependencyInjection.Abstractions](https://github.com/dotnet/runtime)
+- [Microsoft.Extensions.Logging.Abstractions](https://github.com/dotnet/runtime)
+- [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json)
+- [Panuon.WPF](https://github.com/Panuon/Panuon.WPF)
+- [Panuon.WPF.UI](https://github.com/Panuon/Panuon.WPF.UI)
+- [TwitchLib.Client](https://github.com/TwitchLib/TwitchLib.Client)
+- [TwitchLib.Client.Enums](https://github.com/TwitchLib/TwitchLib.Client)
+- [TwitchLib.Client.Models](https://github.com/TwitchLib/TwitchLib.Client)
+- [TwitchLib.Communication](https://github.com/TwitchLib/TwitchLib.Communication)
+- [VPet-Simulator.Core](https://github.com/LorisYounger/VPet)
+- [VPet-Simulator.Windows.Interface](https://github.com/LorisYounger/VPet)
 
 ## 🔥 Screenshots
 
@@ -13,7 +30,10 @@ This is a modification to [VPET Simulator](https://store.steampowered.com/app/19
 ![Layout](https://steamuserimages-a.akamaihd.net/ugc/2494500898682675133/33C7187C1AF6F373067230471BD5889E1174BF07/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false)
 
 ## 📋 Changelog
-   
+
+### v1.0.4
+- Language fixes
+- Added theme compatibility
 ### v1.0.3
 - Added username reading 
 - Fixed display of usernames in trigger queue
